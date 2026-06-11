@@ -163,7 +163,7 @@ nav {
   font-size: 0.72rem;
   color: var(--neon-cyan);
   background: transparent;
-  border: 1px solid rgba(0,238,255,0.35);
+  border: 1px solid rgba(209, 51, 7, 0.35);
   padding: 0.45rem 1.1rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -1882,20 +1882,31 @@ footer {
 <!-- FOOTER — FIX: Stackly button functional                      -->
 <!-- ============================================================ -->
 <footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <span class="footer-logo">STACK<span>LY</span></span>
-      <p class="footer-tagline">Military-grade cybersecurity for the modern enterprise. Defending the digital frontier since 2017.</p>
-      <!-- FIX: Stackly button — real href, opens Stackly -->
-      <a href="404page.html" target="_blank" rel="noopener noreferrer" class="stackly-btn" title="Built with Stackly">
-        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="10" width="14" height="2.5" rx="1" fill="currentColor" opacity="0.6"/>
-          <rect x="1" y="6"  width="14" height="2.5" rx="1" fill="currentColor" opacity="0.8"/>
-          <rect x="1" y="2"  width="14" height="2.5" rx="1" fill="currentColor"/>
-        </svg>
-        Built with Stackly
-      </a>
-    </div>
+<div class="footer-grid">
+  <div class="footer-brand">
+
+    <!-- Clickable STACKLY Logo -->
+    <a href="#hero" class="footer-logo">
+      STACK<span>LY</span>
+    </a>
+
+    <p class="footer-tagline">
+      Military-grade cybersecurity for the modern enterprise.
+      Defending the digital frontier since 2017.
+    </p>
+
+    <!-- Built with Stackly Button -->
+    <a href="404page.html" class="stackly-btn" title="Built with Stackly">
+      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="10" width="14" height="2.5" rx="1" fill="currentColor" opacity="0.6"/>
+        <rect x="1" y="6" width="14" height="2.5" rx="1" fill="currentColor" opacity="0.8"/>
+        <rect x="1" y="2" width="14" height="2.5" rx="1" fill="currentColor"/>
+      </svg>
+      Built with Stackly
+    </a>
+
+  </div>
+</div>
 
     <div>
       <div class="footer-col-title">Platform</div>
