@@ -115,7 +115,7 @@ nav {
   font-weight: 900;
   color: var(--neon-green);
   letter-spacing: 3px;
-  text-shadow: 0 0 20px rgba(0,255,159,0.5);
+  text-shadow: 0 0 20px rgba(164, 181, 174, 0.5);
   text-decoration: none;
   cursor: pointer;
   flex-shrink: 0;
@@ -163,21 +163,31 @@ nav {
   font-size: 0.72rem;
   color: var(--neon-cyan);
   background: transparent;
-  border: 1px solid rgba(209, 51, 7, 0.35);
+  border: 3px solid rgba(218, 189, 101, 0.738);
   padding: 0.45rem 1.1rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: border-color 0.2s, box-shadow 0.2s, color 0.2s;
+  transition: all 0.3s ease;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.8rem;
+
+  /* Glow on all sides */
+  box-shadow:
+    0 0 8px rgba(25, 205, 40, 0.6),
+    0 0 16px rgba(25, 205, 40, 0.4),
+    0 0 24px rgba(25, 205, 40, 0.3);
 }
+
 .btn-login:hover {
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 14px rgba(0,238,255,0.3);
   color: #fff;
+  border-color: #19cd28;
+  box-shadow:
+    0 0 12px rgba(25, 205, 40, 0.8),
+    0 0 24px rgba(25, 205, 40, 0.6),
+    0 0 36px rgba(25, 205, 40, 0.5);
 }
 .btn-signup {
   font-family: var(--font-mono);
